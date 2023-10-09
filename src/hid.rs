@@ -4,7 +4,7 @@ use anyhow::Result;
 
 pub fn get_yeti(api: &hidapi::HidApi) -> Result<hidapi::HidDevice> {
     for device in api.device_list() {
-        if device.vendor_id() == 0x46d && device.product_id() == 0xaaf {
+        if device.vendor_id() == 0x46d && (device.product_id() == 0xaaf || device.product_id() == 0xad1) {
             if device.usage() == 1 {
                 let dev = device.open_device(&api)?;
                 return Ok(dev);
