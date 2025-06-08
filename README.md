@@ -17,5 +17,4 @@ and then create a shortcut to `C:\your\path\to\yeti.exe --hide` in
 
 ## Compatibility
 
-This code was tested with a Blue Yeti X only, 
-but maybe also works with the regular Yeti.
+This code was tested with a Blue Yeti X and a Yeti X WoW Edition.
